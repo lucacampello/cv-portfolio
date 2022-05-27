@@ -3,11 +3,11 @@
     top: $top-position;
     left: 50%;
     transform: translate(-28%, -80%);
-    transition: all .3s ease-in;
+    transition: all .3s ease;
 
-    @media only screen and (max-width: 700px)  {
+    @media only screen and (max-width: 800px)  {
         transform: translate(-48%, -80%);
-        transition: all .3s ease-in;
+        transition: all .7s ease;
     }
 }
 
@@ -17,6 +17,16 @@
     font-weight: bold;
     color: $color;
     text-shadow: 2px 2px rgba(0, 255, 255, 0.4);
+
+    @media only screen and (max-width: 800px) {    
+        width: auto;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {    
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .background-container {
