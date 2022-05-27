@@ -1,5 +1,9 @@
 #background-video {
-    position: fixed;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    top: 66%;
+    left: 66%;
+    transform: translate(-66%, -66%);
 }
