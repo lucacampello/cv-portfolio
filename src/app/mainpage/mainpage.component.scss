@@ -1,3 +1,16 @@
+@mixin positioning($top-position) {
+    position: absolute;
+    top: $top-position;
+    left: 50%;
+    transform: translate(-28%, -80%);
+    transition: all .3s ease-in;
+
+    @media only screen and (max-width: 700px)  {
+        transform: translate(-48%, -80%);
+        transition: all .3s ease-in;
+    }
+}
+
 .background-container {
     min-width: 100%;
     min-height: 100vh;
@@ -21,17 +34,17 @@
         height: 220px;
 
         border-radius: 100%;
+        border: 3px solid rgb(156,166,166);
 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-28%, -80%);
-        transition: all .3s ease-in;
+        @include positioning(50%);
+    }
 
-        @media only screen and (max-width: 700px)  {
-            transform: translate(-48%, -80%);
-            transition: all .3s ease-in;
-        }
-        
+    #name {
+        font-size: 2.5em;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(9, 230, 230);
+        text-shadow: 2px 2px rgba(0, 255, 255, 0.4);
+        @include positioning(60%);
     }
 }
