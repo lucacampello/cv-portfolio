@@ -29,6 +29,16 @@
     }
 }
 
+@mixin wide-orientation($top-position) {
+    @media only screen and (max-height: 600px) {
+        top: $top-position + 4;
+    }
+
+    @media only screen and (max-height: 400px) {
+        top: $top-position + 8;
+    }
+}
+
 .background-container {
     min-width: 100%;
     min-height: 100vh;
@@ -60,11 +70,13 @@
     #name {
         @include headlines(2.5em, rgb(9, 250, 250));
         @include positioning(60%);
+        @include wide-orientation(60%);
     }
 
     #job-title {
         @include headlines(2em, rgb(2, 230, 230));
         @include positioning(67%);
+        @include wide-orientation(69%);
     }
 
     .card-container {
@@ -73,6 +85,7 @@
         justify-content: center;
         
         @include positioning(80%);
+        @include wide-orientation(89%);
 
         @media only screen and (max-width: 600px) {    
             width: 100%;
