@@ -1,3 +1,13 @@
 <div class="exp-subsection">
     <h3>{{title}}</h3>
+    <div *ngIf="title === 'Work Experience'">
+        <app-experience-item *ngFor="let w of workExperience"></app-experience-item>
+    </div>
+    <div *ngIf="title === 'Education'">
+        <app-experience-item *ngFor="let e of education"></app-experience-item>
+    </div>
+    <!-- <div *ngIf="title === 'Certifications'">
+        Ok cert
+    </div> -->
 </div>
+<!--https://stackoverflow.com/questions/68648761/css-drawing-lines-between-dynamically-sized-boxes-->

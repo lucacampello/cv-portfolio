@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-experience-subsection',
@@ -14,5 +14,9 @@ export class ExperienceSubsectionComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  workExperience = ['Euris'];
+  education = ['UniCz', 'UniPdLnC', 'UniPdCs', 'HighSchool'];
+  // certifications = [];
 
 }
