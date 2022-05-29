@@ -4,16 +4,15 @@ body {
     margin: 0;
 }
 
-// TODO scrollbar
-// ::-webkit-scrollbar {
-//     width: 8px;
+::-webkit-scrollbar {
+    width: 4px;
 
-//     &-thumb {
-//         border-radius: 10px;
-//         background-color: rgb(52, 64, 100);
-//     }
+    &-thumb {
+        border-radius: 10px;
+        background-color: rgb(52, 64, 100);
+    }
 
-//     &-track {
-//         background-color: rgb(0, 0, 0);
-//     }
-// }
+    &-track {
+        background-color: rgb(232, 255, 255);
+    }
+}
