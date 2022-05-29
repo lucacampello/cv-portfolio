@@ -1,6 +1,30 @@
+@mixin responsive-container {
+    width: 50%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+
+        &:first-of-type {
+            order: 1;
+        }
+
+        &:last-of-type {
+            order: 3;
+        }
+
+        &:nth-of-type(2) {
+            order: 2;
+        }
+
+        &:nth-of-type(3) {
+            order: 4;
+        }
+    }
+}
+
 .profile-container {
     width: 100%;
-    height: 100vh; //TODO auto
+    height: auto;
 
     background-color: rgb(232, 255, 255);
 
@@ -10,16 +34,34 @@
     align-content: center;
 }
 
+h3 {
+    width: 100%;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(3, 213, 213);
+}
+
 .text-container {
-    width: 50%;
+    @include responsive-container();
     text-align: justify;
-    
+
     p {
+        font-size: 18px;
+        line-height: 1.5;
         padding: 0 5%;
+        color: rgb(0, 123, 123);
     }
 }
 
 .img-container {
-    width: 50%;
+    @include responsive-container();
     text-align: center;
+
+    #businessman,
+    #interests {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
