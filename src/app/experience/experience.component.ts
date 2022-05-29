@@ -12,4 +12,6 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  subsections = ['Work Experience', 'Education', 'Certifications']
+
 }
