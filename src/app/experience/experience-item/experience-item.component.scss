@@ -6,12 +6,16 @@ div {
     &.img-exp-item {
         width: 20%;
         height: auto;
-    
-        img {
-            width: 75px;
-            height: 75px;
-        }
 
+        .wide-logo {
+            width: 100px;
+            height: 50px;
+
+            @media screen and (max-width: 600px) {
+                width: 75px;
+                height: 37.5px;
+            }
+        }
     }
     
     &.content-exp-item {
@@ -25,6 +29,7 @@ div {
         li {
             position: relative;
             list-style: none;
+            color: rgb(0, 123, 123);
 
             h3, h4 {
                 text-align: left;

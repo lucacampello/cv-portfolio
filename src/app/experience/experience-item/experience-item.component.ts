@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-experience-item',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() logo: string;
+  @Input() isWideLogo: boolean = false;
+  @Input() title: string;
+  @Input() subtitle: string;
+  @Input() description: string;
+  constructor() { 
+    this.logo = '';
+    this.title = '';
+    this.subtitle = '';
+    this.description = '';
+  }
 
   ngOnInit(): void {
   }
