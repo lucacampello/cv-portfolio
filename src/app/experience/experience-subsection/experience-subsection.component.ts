@@ -15,13 +15,12 @@ export class ExperienceSubsectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.workExperience.push(this.eurisExperience);
-    this.education.push(this.uniCzErasmus, this.uniPdSecondExperience, this.uniPdFirstExperience);
+    this.education.push(this.uniCzErasmus, this.uniPdSecondExperience, this.uniPdFirstExperience, this.highSchoolExperience);
   }
 
   workExperience: ExperienceItemModel[] = [];
   education: ExperienceItemModel[] = [];
-  // education = ['UniCz', 'UniPdLnC', 'UniPdCs', 'HighSchool'];
-  // certifications = [];
+  certifications = [];
 
   eurisExperience: ExperienceItemModel = {
     logo: '../../../assets/EurisLogo.png',
@@ -43,7 +42,7 @@ export class ExperienceSubsectionComponent implements OnInit {
     logo: '../../../assets/UniPDLogo.png',
     isWideLogo: true,
     title: 'Università degli Studi di Padova',
-    subtitle: '2014-2018',
+    subtitle: '2014 - 2018',
     description: 'Bachelor\'s Degree - Linguistic and Cultural Mediation'
   }
 
@@ -51,8 +50,16 @@ export class ExperienceSubsectionComponent implements OnInit {
     logo: '../../../assets/UniPDLogo.png',
     isWideLogo: true,
     title: 'Università degli Studi di Padova',
-    subtitle: '2013-2014',
+    subtitle: '2013 - 2014',
     description: 'Bachelor\'s Degree - Computer Science - Interrupted'
+  }
+
+  highSchoolExperience: ExperienceItemModel = {
+    logo: '../../../assets/HighSchoolLogo.png',
+    isWideLogo: true,
+    title: 'I.I.S.S. Sandro Pertini',
+    subtitle: '2008 - 2013',
+    description: 'High School Diploma - Accounting, Business and Programming'
   }
 
 }
