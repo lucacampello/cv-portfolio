@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="background-container">
   <video oncanplay="this.play()" onloadedmetadata="this.muted=true" playsInline loop id="background-video">
     <source src="../../assets/background.mp4" type="video/mp4">
@@ -106,5 +107,5 @@
     </a>
   </div>
 </div>
-<app-profile></app-profile>
-<app-experience></app-experience>
+<span class="anchor" id="profile"></span><app-profile></app-profile>
+<span class="anchor" id="experience"></span><app-experience></app-experience>

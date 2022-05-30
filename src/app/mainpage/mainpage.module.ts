@@ -4,6 +4,7 @@ import { MainpageComponent } from './mainpage.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileModule } from '../profile/profile.module';
 import { ExperienceModule } from '../experience/experience.module';
+import { HeaderModule } from '../header/header.module';
 
 const routes: Routes = [
   { path: '', component: MainpageComponent }
@@ -15,7 +16,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     ProfileModule,
-    ExperienceModule
+    ExperienceModule,
+    HeaderModule
   ]
 })
 export class MainpageModule { }
