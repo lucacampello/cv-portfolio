@@ -8,12 +8,9 @@ div {
         height: auto;
 
         .wide-logo {
-            width: 100px;
-            height: 50px;
-
-            @media screen and (max-width: 600px) {
-                width: 75px;
-                height: 37.5px;
+            @media screen and (max-width: 650px) {
+                width: 100px;
+                height: 50px;
             }
         }
     }
@@ -45,7 +42,7 @@ div {
                 padding-right: 5%;
             }
         }
-    
+
         li:after {
             content: '';
             position: absolute;
@@ -60,5 +57,6 @@ div {
                 left: -11%;
             }
         }
+        
     }
 }

@@ -5,7 +5,8 @@
         [title]="w.title" [subtitle]="w.subtitle" [description]="w.description"></app-experience-item>
     </div>
     <div *ngIf="title === 'Education'">
-        <app-experience-item *ngFor="let e of education"></app-experience-item>
+        <app-experience-item *ngFor="let e of education" [logo]="e.logo" [isWideLogo]="e.isWideLogo"
+        [title]="e.title" [subtitle]="e.subtitle" [description]="e.description"></app-experience-item>
     </div>
     <!-- <div *ngIf="title === 'Certifications'">
         Ok cert
