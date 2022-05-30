@@ -1,7 +1,7 @@
 <div class="exp-subsection">
     <h3>{{title}}</h3>
     <div *ngIf="title === 'Work Experience'">
-        <app-experience-item *ngFor="let w of workExperience" [logo]="w.logo" [isWideLogo]="w.isWideLogo"
+        <app-experience-item *ngFor="let w of workExperience" [logo]="w.logo" [isWideLogo]="w.isWideLogo" [hasLine]="true"
         [title]="w.title" [subtitle]="w.subtitle" [description]="w.description"></app-experience-item>
     </div>
     <div *ngIf="title === 'Education'">

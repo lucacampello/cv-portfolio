@@ -3,7 +3,7 @@
 </div>
 <div class="content-exp-item">
     <ul>
-        <li>
+        <li [class.line]="hasLine">
             <h3><i><b>{{title}}</b></i></h3>
             <h4><i>{{subtitle}}</i></h4>
             <p [innerHTML]="description">

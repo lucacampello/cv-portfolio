@@ -9,6 +9,8 @@ export class ExperienceItemComponent implements OnInit {
 
   @Input() logo: string;
   @Input() isWideLogo: boolean = false;
+
+  @Input() hasLine: boolean = false;
   @Input() title: string;
   @Input() subtitle: string;
   @Input() description: string;
