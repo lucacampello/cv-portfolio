@@ -1,38 +1,52 @@
-.carousel {
-    position: relative;
-    height: 220px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+.carousel-container {
+    padding-top: 2%;
     background-color: rgba(232, 255, 255, 0.4);
-}
 
-.slide {
-    width: 140px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-span {
-    width: 100px;
-    position: relative;
-    bottom: -40%;
-    left: -9%;
-
-    @media screen and (max-width: 1200px) {
-        left: -12%;
+    h3 {
+        width: 100%;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        color: rgb(3, 213, 213);
     }
 
-    @media screen and (max-width: 900px) {
-        left: -16%;
+    .carousel {
+        position: relative;
+        height: 220px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
 
-    @media screen and (max-width: 600px) {
-        left: -20%;
+    .slide {
+        width: 140px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
-    @media screen and (max-width: 400px) {
-        left: -28%;
+    span {
+        width: 100px;
+        position: relative;
+        bottom: -40%;
+        left: -9%;
+        color: rgb(0, 123, 123);
+
+        @media screen and (max-width: 1200px) {
+            left: -12%;
+        }
+
+        @media screen and (max-width: 900px) {
+            left: -16%;
+        }
+
+        @media screen and (max-width: 600px) {
+            left: -20%;
+        }
+
+        @media screen and (max-width: 400px) {
+            left: -28%;
+        }
     }
 }

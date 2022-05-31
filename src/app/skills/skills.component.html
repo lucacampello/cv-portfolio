@@ -1,6 +1,9 @@
-<div class="carousel">
-    <ng-container *ngFor="let s of slides">
-        <img [src]="s.src" class="slide" @carouselAnimation>
-        <span><i><b>{{s.title}}</b></i></span>
-    </ng-container>
+<div class="carousel-container">
+    <h3>Skills</h3>
+    <div class="carousel">
+        <ng-container *ngFor="let s of slides">
+            <img [src]="s.src" class="slide" @carouselAnimation>
+            <span><i><b>{{s.title}}</b></i></span>
+        </ng-container>
+    </div>
 </div>
