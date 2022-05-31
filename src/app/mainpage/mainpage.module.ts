@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProfileModule } from '../profile/profile.module';
 import { ExperienceModule } from '../experience/experience.module';
 import { HeaderModule } from '../header/header.module';
+import { SkillsModule } from '../skills/skills.module';
 
 const routes: Routes = [
   { path: '', component: MainpageComponent }
@@ -17,7 +18,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ProfileModule,
     ExperienceModule,
-    HeaderModule
+    HeaderModule,
+    SkillsModule
   ]
 })
 export class MainpageModule { }
