@@ -6,6 +6,7 @@ import { ProfileModule } from '../profile/profile.module';
 import { ExperienceModule } from '../experience/experience.module';
 import { HeaderModule } from '../header/header.module';
 import { SkillsModule } from '../skills/skills.module';
+import { FooterModule } from '../footer/footer.module';
 
 const routes: Routes = [
   { path: '', component: MainpageComponent }
@@ -19,7 +20,8 @@ const routes: Routes = [
     ProfileModule,
     ExperienceModule,
     HeaderModule,
-    SkillsModule
+    SkillsModule,
+    FooterModule
   ]
 })
 export class MainpageModule { }
