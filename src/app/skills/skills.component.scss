@@ -1,12 +1,38 @@
 .carousel {
     position: relative;
-    height: 200px;
+    height: 220px;
     width: 100%;
     overflow: hidden;
     display: flex;
+    align-items: center;
+    background-color: rgba(232, 255, 255, 0.4);
 }
 
 .slide {
-    width: 20%;
-    height: 100%;
+    width: 140px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+span {
+    width: 100px;
+    position: relative;
+    bottom: -40%;
+    left: -9%;
+
+    @media screen and (max-width: 1200px) {
+        left: -12%;
+    }
+
+    @media screen and (max-width: 900px) {
+        left: -16%;
+    }
+
+    @media screen and (max-width: 600px) {
+        left: -20%;
+    }
+
+    @media screen and (max-width: 400px) {
+        left: -28%;
+    }
 }

@@ -1,5 +1,6 @@
 <div class="carousel">
     <ng-container *ngFor="let s of slides">
         <img [src]="s.src" class="slide" @carouselAnimation>
+        <span><i><b>{{s.title}}</b></i></span>
     </ng-container>
 </div>

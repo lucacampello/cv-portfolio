@@ -36,10 +36,11 @@ export class SkillsComponent implements OnInit {
   }
 
   slides = [
-    { src: "../../../assets/Businessman.png"},
-    { src: "../../../assets/EurisLogo.png"},
-    { src: "../../../assets/HighSchoolLogo.png"},
-    { src: "../../../assets/UniPDLogo.png"},
-    { src: "../../../assets/UniCZLogo.png"}
+    { src: "../../../assets/angular.svg", title: "Angular"},
+    { src: "../../../assets/NodeJS.svg", title: "NodeJS"},
+    { src: "../../../assets/Typescript.svg", title: "Typescript"},
+    { src: "../../../assets/Jasmine.svg", title: "Jasmine"},
+    { src: "../../../assets/Karma.svg", title: "Karma"},
+    { src: "../../../assets/Git.svg", title: "Git"}
   ]
 }
