@@ -1,3 +1,20 @@
+@mixin base-spinner {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+@mixin spinner-animation($name, $animation-duration) {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid rgb(3, 213, 213);
+    border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
+    animation: $name $animation-duration linear infinite;
+}
+
 .loader-container {
     width: 100%;
     height: 100%;
@@ -11,48 +28,28 @@
     background-color: rgba(0, 123, 123, 0.7);
     z-index: 3;
 
-    .spinner {
-        position: absolute;
-        top: 48%;
-        left: 48%;
+    .spinner-f, .spinner-s, .spinner-t, .spinner-fo {
+        @include base-spinner();
     }
 
-    .spinner:after {
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 1px;
-        border-radius: 50%;
-        border: 5px solid rgb(3, 213, 213);
-        border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
-        animation: spinner 3s linear infinite;
-    }
-
-    @keyframes spinner {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .spinner-s {
-        position: absolute;
-        top: 48%;
-        left: 48%;
+    .spinner-f:after {
+        @include spinner-animation(spinner-f, 3s);
     }
 
     .spinner-s:after {
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 1px;
-        border-radius: 50%;
-        border: 5px solid rgb(3, 213, 213);
-        border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
-        animation: spinner-s 6s linear infinite;
+        @include spinner-animation(spinner-s, 6s);
+    }
+
+    .spinner-t:after {
+        @include spinner-animation(spinner-t, 3s);
+    }
+
+    .spinner-fo:after {
+        @include spinner-animation(spinner-fo, 6s);
+    }
+
+    @keyframes spinner-f {
+        
     }
 
     @keyframes spinner-s {
@@ -65,23 +62,6 @@
         }
     }
 
-    .spinner-t {
-        position: absolute;
-        top: 48%;
-        left: 48%;
-    }
-
-    .spinner-t:after {
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 1px;
-        border-radius: 50%;
-        border: 5px solid rgb(3, 213, 213);
-        border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
-        animation: spinner-t 3s linear infinite;
-    }
-
     @keyframes spinner-t {
         0% {
             transform: rotate(90deg);
@@ -92,24 +72,7 @@
         }
     }
 
-    .spinner-f {
-        position: absolute;
-        top: 48%;
-        left: 48%;
-    }
-
-    .spinner-f:after {
-        content: "";
-        display: block;
-        width: 100px;
-        margin: 1px;
-        border-radius: 50%;
-        border: 5px solid rgb(3, 213, 213);
-        border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
-        animation: spinner-f 6s linear infinite;
-    }
-
-    @keyframes spinner-f {
+    @keyframes spinner-fo {
         0% {
             transform: rotate(-90deg);
         }
