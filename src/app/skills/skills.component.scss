@@ -3,12 +3,10 @@
     height: 200px;
     width: 100%;
     overflow: hidden;
-    border-radius: 0.5em;
+    display: flex;
 }
 
 .slide {
-    display: flex;
-    flex-direction: row;
     width: 20%;
     height: 100%;
 }

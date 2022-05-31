@@ -1,6 +1,6 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { fadeIn, fadeOut } from './animations/skillsAnimation';
+import { enter, leave } from './animations/skillsAnimation';
 
 @Component({
   selector: 'app-skills',
@@ -8,8 +8,12 @@ import { fadeIn, fadeOut } from './animations/skillsAnimation';
   styleUrls: ['./skills.component.scss'],
   animations: [
     trigger('carouselAnimation', [
-      transition('void => *', [ useAnimation(fadeIn, {params: {time: '1500ms'}}) ]),
-      transition('* => void', [ useAnimation(fadeOut, {params: {time: '1500ms'}}) ])
+      transition(':enter', [
+        useAnimation(enter)
+      ]),
+      transition(':leave', [
+        useAnimation(leave)
+      ])
     ])
   ]
 })
@@ -25,6 +29,7 @@ export class SkillsComponent implements OnInit {
   Repeat() {
     setTimeout(() => {
       const next = this.currentSlide + 1;
+      this.slides.push(this.slides.shift()!);
       this.currentSlide = next === this.slides.length ? 0 : next;
       this.Repeat();
     }, 2000);
