@@ -7,6 +7,7 @@ import { ExperienceModule } from '../experience/experience.module';
 import { HeaderModule } from '../header/header.module';
 import { SkillsModule } from '../skills/skills.module';
 import { FooterModule } from '../footer/footer.module';
+import { SpinnerModule } from '../spinner/spinner.module';
 
 const routes: Routes = [
   { path: '', component: MainpageComponent }
@@ -21,7 +22,8 @@ const routes: Routes = [
     ExperienceModule,
     HeaderModule,
     SkillsModule,
-    FooterModule
+    FooterModule,
+    SpinnerModule
   ]
 })
 export class MainpageModule { }
