@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpinnerService } from '../spinner/spinner.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private spinnerService: SpinnerService,
+  ) { }
 
   ngOnInit(): void {
+    this.spinnerService.stopLoading();
   }
 
 }
