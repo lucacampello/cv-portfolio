@@ -7,11 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "private": true,
-  "homepage": "https://lucacampello94.github.io/cv-portfolio/.",
+  "homepage": "https://lucacampello94.github.io/cv-portfolio",
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
