@@ -23,7 +23,7 @@ export class ExperienceSubsectionComponent implements OnInit {
   certifications = [];
 
   eurisExperience: ExperienceItemModel = {
-    logo: '../../../assets/EurisLogo.png',
+    logo: './assets/EurisLogo.png',
     isWideLogo: true,
     title: 'Euris SpA',
     subtitle: '2019 - present',
@@ -31,7 +31,7 @@ export class ExperienceSubsectionComponent implements OnInit {
   }
 
   uniCzErasmus: ExperienceItemModel = {
-    logo: '../../../assets/UniCZLogo.png',
+    logo: './assets/UniCZLogo.png',
     isWideLogo: true,
     title: 'Univerzita Karlova V Praze',
     subtitle: '2018',
@@ -39,7 +39,7 @@ export class ExperienceSubsectionComponent implements OnInit {
   }
 
   uniPdSecondExperience: ExperienceItemModel = {
-    logo: '../../../assets/UniPDLogo.png',
+    logo: './assets/UniPDLogo.png',
     isWideLogo: true,
     title: 'Università degli Studi di Padova',
     subtitle: '2014 - 2018',
@@ -47,7 +47,7 @@ export class ExperienceSubsectionComponent implements OnInit {
   }
 
   uniPdFirstExperience: ExperienceItemModel = {
-    logo: '../../../assets/UniPDLogo.png',
+    logo: './assets/UniPDLogo.png',
     isWideLogo: true,
     title: 'Università degli Studi di Padova',
     subtitle: '2013 - 2014',
@@ -55,7 +55,7 @@ export class ExperienceSubsectionComponent implements OnInit {
   }
 
   highSchoolExperience: ExperienceItemModel = {
-    logo: '../../../assets/HighSchoolLogo.png',
+    logo: './assets/HighSchoolLogo.png',
     isWideLogo: true,
     title: 'I.I.S.S. Sandro Pertini',
     subtitle: '2008 - 2013',
