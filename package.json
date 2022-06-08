@@ -1,6 +1,6 @@
 {
   "name": "cv-portfolio",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "test": "ng test"
   },
   "private": true,
-  "homepage": "https://lucacampello94.github.io/cv-portfolio/.",
+  "homepage": "https://lucacampello94.github.io/cv-portfolio",
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
