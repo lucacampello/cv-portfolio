@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 @mixin responsive-container {
     width: 50%;
 
@@ -26,7 +28,7 @@
     width: 100%;
     height: auto;
 
-    background-color: rgb(232, 255, 255);
+    background-color: $whitest-blue;
 
     display: flex;
     flex-direction: row;
@@ -40,7 +42,7 @@ h3 {
     font-style: italic;
     font-weight: 700;
     text-align: center;
-    color: rgb(3, 213, 213);
+    color: $light-blue;
 }
 
 .text-container {
@@ -51,7 +53,7 @@ h3 {
         font-size: 18px;
         line-height: 1.5;
         padding: 0 5%;
-        color: rgb(0, 123, 123);
+        color: $dark-blue;
     }
 }
 

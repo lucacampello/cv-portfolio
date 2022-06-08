@@ -1,6 +1,8 @@
+@import "../../styles.scss";
+
 .carousel-container {
     padding-top: 2%;
-    background-color: rgba(232, 255, 255, 0.4);
+    background-color: $whitest-blue-shaded;
 
     h3 {
         width: 100%;
@@ -8,7 +10,7 @@
         font-style: italic;
         font-weight: 700;
         text-align: center;
-        color: rgb(3, 213, 213);
+        color: $light-blue;
     }
 
     .carousel {
@@ -31,7 +33,7 @@
         position: relative;
         bottom: -40%;
         left: -9%;
-        color: rgb(0, 123, 123);
+        color: $dark-blue;
 
         @media screen and (max-width: 1200px) {
             left: -12%;

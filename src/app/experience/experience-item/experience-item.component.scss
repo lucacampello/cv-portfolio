@@ -1,3 +1,4 @@
+@import "../../../styles.scss";
 div {
     height: 100%;
     display: block;
@@ -29,7 +30,7 @@ div {
         li {
             position: relative;
             list-style: none;
-            color: rgb(0, 123, 123);
+            color: $dark-blue;
 
             h3, h4 {
                 text-align: left;

@@ -1,6 +1,8 @@
+@import "../../../styles.scss";
+
 .exp-subsection {
     width: 75%;
-    background-color: rgba(232, 255, 255, 0.4);
+    background-color: $whitest-blue-shaded;
     display: inline-block;
 
     @media screen and (max-width: 800px) {
@@ -14,5 +16,5 @@ h3 {
     font-style: italic;
     font-weight: 700;
     text-align: center;
-    color: rgb(3, 213, 213);
+    color: $light-blue;
 }

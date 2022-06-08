@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 @mixin base-spinner {
     position: absolute;
     top: 48%;
@@ -10,8 +12,8 @@
     width: 100px;
     margin: 1px;
     border-radius: 50%;
-    border: 5px solid rgb(3, 213, 213);
-    border-color: rgb(3, 213, 213) transparent rgb(3, 213, 213) transparent;
+    border: 5px solid $light-blue;
+    border-color: $light-blue transparent $light-blue transparent;
     animation: $name $animation-duration linear infinite;
 }
 
