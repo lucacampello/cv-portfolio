@@ -9,6 +9,7 @@
     "test": "ng test"
   },
   "private": true,
+  "homepage": "https://lucacampello94.github.io/cv-portfolio/.",
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
